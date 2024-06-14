@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管樂介紹</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <a href="https://snowoaq.github.io/windband-sky/" class="logo-container">
+            <img src="logo.png" alt="管樂世界 Logo">
+            <span class="logo-text">管樂天地</span>
+        </a>
+        <h1>管樂介紹</h1>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">銅管</a>
+                  <div class="dropdown-content">
+                    <a href="https://snowoaq.github.io/windband-tp/">小號</a>
+                    <a href="https://snowoaq.github.io/windband-tb/">長號</a>
+                    <a href="https://snowoaq.github.io/windband-horn/">法國號</a>
+                    <a href="https://snowoaq.github.io/windband-eup/">上低音號</a>
+                    <a href="https://snowoaq.github.io/windband-tuba/">低音號</a>
+                  </div>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">木管</a>
+                  <div class="dropdown-content">
+                    <a href="https://snowoaq.github.io/windband-cl/">單簧管</a>
+                    <a href="https://snowoaq.github.io/windband-oboe/">雙簧管</a>
+                    <a href="https://snowoaq.github.io/windband-flute/">長笛</a>
+                    <a href="https://snowoaq.github.io/windband-sax/">薩克斯風</a>
+                  </div>
+                </li>
+                <li><a href="https://snowoaq.github.io/windband-per/">打擊</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="flute">
+            <h2>上低音號</h2>
+            <p>上低音號是一種大型銅管樂器，音域介於小號和低音號之間。</p>
+            <p>它以其豐富的音色和強大的音量聞名，常用於管樂隊和交響樂團中，擔任中低音部分。</p>
+            <p>上低音號通常具有四個活塞，演奏者通過按下活塞並調整嘴唇來改變音高。</p>
+            <p>其溫暖而圓潤的音色使其在各種音樂風格中都能發揮重要作用，不僅能夠提供和聲支撐，還能在獨奏中展現出色的表現力。</p>
+        </section>
+        <section id="gallery">
+            <h2>圖片集</h2>
+            <div class="carousel">
+                <div><img src="eup1.jpg" alt="上低音號1"></div>
+                <div><img src="eup2.jpg" alt="上低音號2"></div>
+                <div><img src="eup3.jpg"eup alt="上低音號3"></div>
+            </div>
+        </section>
+        <section id="videos">
+            <h2>視頻</h2>
+            <div class="video-carousel">
+                <div class="video-container">
+                    <iframe width="2537" height="1157" src="https://www.youtube.com/embed/avQS5GjS4a0" title="NEW HARDEST, FASTEST EUPHONIUM SOLO!!! “The Final Boss” (Elden Ring Inspired) by Matonizz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe width="2537" height="1157" src="https://www.youtube.com/embed/Lnm1hJIc5XU" title="【生映像】【題名逆から読んでも...なのに良い曲過ぎて泣く】ユーフォ・フォー・ユー / Euph. for You /高橋宏樹 【Euphonium+Piano】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- 添加更多視頻 -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>本網站僅供靜宜大學動態網頁設計課程，繳交作業用，不為其他商業用途 © 2024 管樂介紹</p>
+        <div class="footer-links">
+            <a href="https://snowoaq.github.io/windband-sky/">返回首頁</a>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+            });
+            $('.video-carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 5000,
+                dots: true,
+            });
+        });
+    </script>
+</body>
+</html>
+
